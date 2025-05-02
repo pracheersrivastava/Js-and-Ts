@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      number = Math.random();
+      result = ''
+      guess = 'Heads'
+      // if (number <= 0.5) {
+      //   result = 'Heads';
+      // } else {
+      //   result = 'Tails';
+      // }
+
+      // if (guess === result) {
+      //   console.log(`You guessed ${guess}. Coin flip was ${result}. You win!`);
+      // } else {
+      //   console.log(`You guessed ${guess}. Coin flip was ${result}. You lose!`);
+      // }
+
+      result = (number <=0.5) ? 'Heads' : 'Tails';
+
+      (guess === result) ? console.log(`You guessed ${guess}. Coin flip was ${result}. You win!`) : console.log(`You guessed ${guess}. Coin flip was ${result}. You lose!`);
+
+    </script>
+  </body>
+</html>

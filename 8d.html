@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const product1 = {
+        name: 'Airpods',
+        price: 599,
+      };
+      const product2 = {
+        name: 'Eaphones',
+        price: 299,
+      };
+
+      function comparePrice(product1, product2) {
+        if (product1.price > product2.price) {
+          console.log(`${product2.name}`);
+        } else if (product1.price < product2.price) {
+          console.log(`${product1.name}`);
+        } else {
+          console.log(`${product1.name} and ${product2.name} have the same price`);
+        }
+      }
+      comparePrice(product1, product2);
+    </script>
+  </body>
+</html>

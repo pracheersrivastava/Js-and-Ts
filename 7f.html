@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function convertTemperature(degree,unit) {
+        if (unit === 'C') {
+          return `${(degree * 9 / 5) + 32}F`; // Convert Celsius to Fahrenheit
+        } else if (unit === 'F') {
+          return `${(degree - 32) * 5 / 9}C`; // Convert Fahrenheit to Celsius
+        } else {
+          return 'Invalid unit'; // Handle invalid unit input
+        }
+      }
+      console.log(convertTemperature(25, 'C'));
+    </script>
+  </body>
+</html>
