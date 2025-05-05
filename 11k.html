@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const num = [-2, 3, -5, 7, 10];
+      function countPositive(nums) {
+        let count = 0;
+        for (let i = 0; i < num.length; i++) {
+          if (num[i] > 0) {
+            count++;
+          }
+        }
+        return count;
+      }
+      console.log(countPositive(num));
+    </script>
+  </body>
+</html>

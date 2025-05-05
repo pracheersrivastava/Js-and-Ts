@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const numbers = [-2, -1, 0, 99];
+      function addNum(array, num) {
+        let newArray = [];
+        for (let i = 0; i < array.length; i++) {
+          newArray.push(array[i] + num);
+        }
+        return newArray;  
+      }
+      console.log(addNum(numbers, 2));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input class = "js-name-input" onkeydown="handleKey(event)">
+    <button onclick="displayName()">Submit</button>
+    <p class = "js-name-output"></p>
+    <script>
+      function handleKey(event) {
+        console.log(event.console);
+        if (event.key === 'Enter') {
+          displayName();
+        }
+      }
+      function displayName() {
+        const inputElement = document.querySelector('.js-name-input');
+        const name = inputElement.value;
+
+        document.querySelector('.js-name-output').innerText = `Your name is: ${name}`;
+      }
+    </script>
+  </body>
+</html>

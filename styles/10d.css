@@ -1,0 +1,47 @@
+.button-gaming {
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  border: none;
+  color: black;
+  padding: 14px 22px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.gaming-button-active {
+  background-color: black;
+  color: white;
+}
+.button-music {
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  border: none;
+  color: black;
+  padding: 14px 22px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.button-tech {
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  border: none;
+  color: black;
+  padding: 14px 22px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.music-button-active {
+  background-color: black;
+  color: white;
+}
+.tech-button-active {
+  background-color: black;
+  color: white;
+}

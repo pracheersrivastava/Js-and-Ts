@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="click('Heads')">Heads</button>
+    <button onclick = "click('Tails')">Tails</button>
+    <p></p>
+    <script>
+      function click(choice) {
+        const resultElement = document.querySelector('p')
+        if (choice === 'Heads') {
+          resultElement.innerText = 'You chose: Heads';
+        } else if (choice === 'Tails') {
+          resultElement.innerText = 'You chose: Tails';
+        }
+      }
+    </script>
+  </body>
+</html>

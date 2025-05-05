@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input onkeyup="handleKey(event)">
+    <p class = "js-key-up"></p>
+    <script>
+      fullInput = ''
+      function handleKey(event) {
+        if (event.key.length ===1) {
+          fullInput += event.key;
+        } else if (event.key === 'Backspace') {
+          fullInput = fullInput.slice(0,-1);
+        }
+        document.querySelector('.js-key-up').innerText = fullInput;
+      }
+    </script>
+  </body>
+</html>

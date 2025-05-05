@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/10i.css">
+  </head>
+  <body>
+    <p class = "js-show-result result"></p>
+    <button onclick="
+    updateCalculation(1)"
+    ><img src="images/1.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(2)"><img src="images/2.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(3)"><img src="images/3.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(' + ')"><img src="images/+.png" class = "digit-icon"></button>
+    <br> 
+    <br> 
+    <button onclick="updateCalculation(4)"><img src="images/4.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(5)"><img src="images/5.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(6)"><img src="images/6.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(' - ')"><img src="images/-.png" class="digit-icon"></button>
+    <br>
+    <br>
+    <button onclick="updateCalculation(7)"><img src="images/7.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(8)"><img src="images/8.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(9)"><img src="images/9.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(' * ');"><img src="images/mul.png" class="digit-mul"></button>
+    <br>
+    <br>
+    <button onclick="updateCalculation(0);"><img src="images/0.png" class="digit-icon"></button>
+    <button onclick="updateCalculation('.');"><img src="images/dot.png" class="digit-icon"></button>
+    <button onclick="evaluateCalculation()"><img src="images/=.png" class="digit-icon"></button>
+    <button onclick="updateCalculation(' / ')"><img src="images/div.png" class="digit-icon"></button>
+    <br>
+    <br>
+    <button onclick="clearCalculation()"><img src="images/clear.png" class="digit-icon"></button>
+
+    <script src="scripts/10i.js"></script>
+  </body>
+</html>

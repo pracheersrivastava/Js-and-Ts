@@ -1,0 +1,26 @@
+body{
+  background-color: black;
+}
+button {
+  padding: -10px;
+  margin: -5px;
+  border: none;
+  background-color: transparent;
+}
+.digit-icon{
+  border: none;
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+}
+.digit-mul{
+  border: none;
+  background-color: transparent;
+  height: 30px;
+  width: 35px;
+}
+.result{
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+}
