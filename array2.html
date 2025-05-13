@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function sumInput() {
+                let nums = [];
+                let sum = 0;
+                while (true) {
+                    let value = prompt("Enter a number", 0);
+                    if (value === "" || value === null || !isFinite(value)) break;
+                    nums.push(+value);
+                }
+                for (let num of nums) {
+                    sum += num;
+                }
+                return sum;
+            }
+            alert(sumInput());
+        </script>11
+    </body>
+</html>

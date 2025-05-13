@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let num = prompt("Enter a number", 2);
+            num = Number(num);
+            for (let i = 2; i <= num; i++) {
+                let isPrime = true;
+                // check if i is prime
+                for(let j = 2; j <= Math.sqrt(i); j++){
+                    if(i%j === 0){
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if(isPrime){
+                    console.log(i);
+                }
+            }
+        </script>
+    </body>
+</html>
