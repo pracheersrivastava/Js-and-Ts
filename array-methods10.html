@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -20,4 +21,28 @@
             console.log(shuffle(arr));  
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let arr = [1, 2, 3];
+            function shuffle(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            console.log(shuffle(arr));
+            console.log(shuffle(arr));
+            console.log(shuffle(arr));
+            console.log(shuffle(arr));
+            console.log(shuffle(arr));
+            console.log(shuffle(arr));
+            console.log(shuffle(arr));  
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>

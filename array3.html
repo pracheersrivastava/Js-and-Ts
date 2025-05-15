@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -19,4 +20,27 @@
             alert(getMaxSubSum([-1, 2, 3, -9, 11]));
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let arr = [];
+            function getMaxSubSum(arr) {
+                let maxSum = 0;
+                for (i = 0; i < arr.length; i++) {
+                    let sum = 0;
+                    for (let j = i; j < arr.length; j++) {
+                        sum += arr[j];
+                        if (sum > maxSum) {
+                            maxSum = sum;
+                        }
+                    }
+                }
+                return maxSum; // Added return statement
+            }
+            alert(getMaxSubSum([-1, 2, 3, -9, 11]));
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>

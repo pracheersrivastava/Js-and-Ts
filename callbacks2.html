@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function loadScript(src, callback){
+                let script = document.createElement('script');
+                script.src = src;
+                
+                script.onload = () => callback(null, script);
+                script.onerror = () => callback(new Error(`Failed to Load script!`));
+
+                document.body.append(script);
+
+                // document.head.append(script);
+
+            }
+
+            loadScript('bad-url.js', (error, script) => {
+                if (error) {
+                    console.log('Error loading subject', error);
+                }
+                else {
+                    console.log('Script loaded successfully', script);
+                }
+            });
+        </script>
+    </body>
+</html>

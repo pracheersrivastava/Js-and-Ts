@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -19,4 +20,27 @@
             alert(arr);
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function filterRange(arr, a, b){
+                let filtered = [];
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i] >= a && arr[i] <= b) {
+                        filtered.push(arr[i]);
+                    }
+                }
+                return filtered;
+            }
+            let arr = [5, 3, 8, 1];
+
+            let filtered = filterRange(arr, 1, 4);
+
+            alert(filtered);
+            alert(arr);
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>

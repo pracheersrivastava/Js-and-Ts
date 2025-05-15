@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -18,4 +19,26 @@
             alert( usersMapped[0].fullName )
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            john = { name: "John", surname: "Smith", id: 1 };
+            let pete = { name: "Pete", surname: "Hunt", id: 2 };
+            let mary = { name: "Mary", surname: "Key", id: 3 };
+
+            let users = [ john, pete, mary ];
+
+            let usersMapped = users.map(function(item, index, array){
+                return {
+                    fullName : item.name + " " + item.surname,
+                    id : item.id
+                }
+            })
+            alert( usersMapped[0].id )
+            alert( usersMapped[0].fullName )
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html> 

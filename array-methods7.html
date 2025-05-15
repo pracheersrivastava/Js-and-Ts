@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -15,4 +16,23 @@
             alert( names ); // John, Pete, Mary
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let john = { name: "John", age: 25 };
+            let pete = { name: "Pete", age: 30 };
+            let mary = { name: "Mary", age: 28 };
+
+            let users = [ john, pete, mary ];
+
+            let names = users.map(function(item, index, array){
+                return item.name;
+            })
+
+            alert( names ); // John, Pete, Mary
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>

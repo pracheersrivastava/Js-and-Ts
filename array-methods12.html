@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -15,4 +16,23 @@
             alert( unique(strings) ); // Hare, Krishna, :-O
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function unique(arr) {
+                return arr.filter((item, index, array) => {
+                    return array.indexOf(item) === index;
+                });
+            }
+            
+            let strings = ["Hare", "Krishna", "Hare", "Krishna",
+                "Krishna", "Krishna", "Hare", "Hare", ":-O"
+            ];
+            
+            alert( unique(strings) ); // Hare, Krishna, :-O
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>

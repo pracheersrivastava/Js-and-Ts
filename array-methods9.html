@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -16,4 +17,24 @@
                 alert(arr[2].name); // John
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function sortByAge(users) {
+                return users.sort((a, b) => a.age - b.age);
+            }
+            let john = { name: "John", age: 25 };
+                let pete = { name: "Pete", age: 30 };
+                let mary = { name: "Mary", age: 28 };
+                let arr = [ john, pete, mary ];
+
+                sortByAge(arr);
+                alert(arr[0].name); // John
+                alert(arr[1].name); // John
+                alert(arr[2].name); // John
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>

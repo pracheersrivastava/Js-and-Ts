@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -18,4 +19,26 @@
             }
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+             function checkAge(age) {
+                if (age >= 18) {
+                    return true;
+                } else {
+                    return confirm('Did parents allow you?');
+                }
+             }
+
+            let age = prompt('Enter your age', 18);
+            if(checkAge(age)) {
+                alert('Access granted');
+            } else {
+                alert('Access denied');
+            }
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>

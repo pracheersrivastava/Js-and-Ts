@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -32,4 +33,40 @@
             alert( result )
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function Calculator() {
+                this.methods = {
+                    '+' : (a,b) => a+b,
+                    '-' : (a,b) => a-b,
+                    '*' : (a,b) => a*b,
+                    '/' : (a,b) => a/b,
+                };
+                this.calculate = (str) => {
+                    let parts = str.split(' ');
+                    let a = +parts[0];
+                    let op = parts[1];
+                    let b = +parts[2];
+                
+                if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+                    return NaN;
+                }
+                return this.methods[op](a,b);}
+
+                this.addMethod = (name, func) => {
+                    this.methods[name] = func;
+                };
+            }
+
+            let powerCalc = new Calculator();
+            powerCalc.addMethod("**", (a, b) => a ** b);
+
+            let result = powerCalc.calculate("2 ** 3");
+            alert( result )
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>
