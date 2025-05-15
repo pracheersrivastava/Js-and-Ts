@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -21,4 +22,29 @@
 
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function multiplyNumeric(obj) {
+                for (let key in obj) {
+                    if (typeof obj[key] == 'number') {
+                        obj[key] *= 2;
+                    }
+                }
+            }
+
+            let menu = {
+                width: 200,
+                height: 100,
+                title: "My menu"
+            };
+
+            multiplyNumeric(menu);
+
+
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>

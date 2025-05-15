@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function loadScript(src) {
+                let promise = new Promise((resolve, reject) => {
+                    let script = document.createElement('script');
+                    script.src = src;
+                    script.onload = () => resolve(script);
+                    script.onerror = () => reject(new Error('Error loading script'));
+                    document.body.append(script);
+                });
+                return promise;
+            }
+
+            loadScript('https://example.com/script.js')
+                .then(script => console.log('Script Loaded!', script.src))
+                .catch(error => console.error('Error Loading Script', error));
+        </script>
+    </body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <body>
@@ -14,4 +15,22 @@
             alert(isEmpty(schedule));
         </script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let schedule = {};
+
+            function isEmpty(obj) {
+                for (let key in obj) {
+                    return false;
+                } return true;
+            }
+            alert(isEmpty(schedule));
+            schedule["8:30"] = "get up";
+            alert(isEmpty(schedule));
+        </script>
+    </body>
+>>>>>>> afe0fa62564901e05220518890e234fff5d67464
 </html>
