@@ -12,4 +12,4 @@ let employee2 : EmployeeType ={
     retire : (date : Date) => {
         console.log(date);
     }
-}
+}   
