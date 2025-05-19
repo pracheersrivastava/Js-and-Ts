@@ -125,7 +125,7 @@ jon.id = 5
 
 //Subclasss
 class Employee extends Person {
-    position : string,
+    position : string
     constructor(id:number, name:string, position:string){
         super(id, name)
         this.position = position

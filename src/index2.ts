@@ -1,2 +1,7 @@
 console.log("Hello, world!");
-let umar : number = 20;
+let dateOfBirth : number = 15
+
+if (dateOfBirth < 18)
+    dateOfBirth += 10
+
+console.log(dateOfBirth)
